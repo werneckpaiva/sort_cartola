@@ -46,11 +46,9 @@ def main():
     print "MAX leagues per team: %s" % MAX_LEAGUES
     with counting:
         global_league = retrieve_global_league()
-    print "Sorting global league..."
-    with counting:
+        print "Sorting global league..."
         sort_league(global_league)
-    print "Sorting all leagues..."
-    with counting:
+        print "Sorting all leagues..."
         sorted_leagues = generate_sorted_leagues(global_league)
     print ""
     print "Liga 1"
